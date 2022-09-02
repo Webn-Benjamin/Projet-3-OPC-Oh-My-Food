@@ -67,6 +67,10 @@
       box-shadow: $base-shadow;
       border-radius: 1rem;
       position: relative;
+      transition: 0.2s;
+      &:hover {
+        background: #f5edff;
+      }
       @media screen and (max-width: 1100px) {
         width: 80%;
       }
@@ -74,9 +78,6 @@
         margin-right: 0.7rem;
         color: gray;
       }
-    }
-    & li.active {
-      background-color: #f5edff;
     }
     & li:before {
       content: "" counter(steps);
