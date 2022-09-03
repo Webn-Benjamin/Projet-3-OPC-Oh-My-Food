@@ -469,7 +469,7 @@ header {
 }
 header a {
   position: absolute;
-  left: 5rem;
+  left: 1rem;
   transform: translateY(-50%);
   top: 50%;
   color: inherit;
