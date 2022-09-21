@@ -1,4 +1,13 @@
-@use '../abstracts/' as *;
+@use "../abstracts/" as *;
 .main {
-    margin: auto;
+  margin: auto;
+}
+
+h3 {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin: 0;
 }

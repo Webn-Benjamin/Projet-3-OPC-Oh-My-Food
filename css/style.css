@@ -252,6 +252,15 @@ header {
   margin: auto;
 }
 
+h3 {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin: 0;
+}
+
 header {
   text-align: center;
   height: 3.5rem;
@@ -266,6 +275,31 @@ header {
 header h1 {
   margin: 0;
   font-weight: 100;
+}
+
+.card-heart {
+  cursor: pointer;
+  position: relative;
+}
+.card-heart:hover .no-hover {
+  opacity: 0;
+}
+.card-heart:hover .hover {
+  opacity: 1;
+}
+.card-heart i {
+  font-size: 2rem;
+}
+.card-heart .no-hover {
+  position: absolute;
+  transition-duration: 1.5s;
+}
+.card-heart .hover {
+  opacity: 0;
+  transition-duration: 1s;
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .localisation {
@@ -355,7 +389,7 @@ header h1 {
   flex-direction: row;
   gap: 1rem;
   list-style-type: none;
-  width: 80%;
+  width: calc(100% - 4rem);
   background-color: #f6f6f6;
   padding: 1.5rem;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -2px 0px inset;
@@ -383,6 +417,54 @@ header h1 {
   top: 50%;
   transform: translateY(-50%);
   border-radius: 50%;
+}
+
+.restaurants {
+  padding: 2rem;
+  background-color: #eaeaea;
+}
+.restaurants h2 {
+  margin: 0;
+  margin-bottom: 2rem;
+}
+.restaurants .restaurants-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+.restaurants .restaurants-container .card {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -2px 0px inset;
+  background-color: white;
+}
+.restaurants .restaurants-container .card .card-new {
+  position: absolute;
+}
+.restaurants .restaurants-container .card .card-img {
+  width: 100%;
+  display: flex;
+  height: 12rem;
+}
+.restaurants .restaurants-container .card .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.restaurants .restaurants-container .card .card-desc {
+  padding: 1rem;
+  width: calc(100% - 2rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 /*# sourceMappingURL=style.css.map */
