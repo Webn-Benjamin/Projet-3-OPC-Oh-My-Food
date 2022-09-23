@@ -16,7 +16,7 @@
 .nos-restaurants {
   @include flex(center, center, column);
   background: $lightgray;
-  padding: 2rem 0;
+  padding: $base-padding 0;
   margin-bottom: $bottom-margin;
   & h2 {
     margin: 0;
@@ -54,7 +54,7 @@
       @include flex(center, none, row);
       gap: 1rem;
       list-style-type: none;
-      width: calc(100% - $base-padding*4);
+      width: calc(100% - $base-padding * 4);
       background-color: #f6f6f6;
       padding: 1.5rem;
       box-shadow: rgb(0 0 0 / 40%) 0px 2px 4px,
@@ -63,6 +63,9 @@
       position: relative;
       transition: 0.2s;
       font-weight: 600;
+      &:hover {
+        background: #f5edff;
+      }
       & i {
         color: gray;
       }
@@ -86,7 +89,7 @@
 
 // Restaurants
 .restaurants {
-  padding: 2rem;
+  padding: 3rem $base-padding;
   background-color: $gray;
   & h2 {
     margin: 0;
@@ -102,11 +105,17 @@
       position: relative;
       border-radius: 1rem;
       overflow: hidden;
-      @include flex(baseline,center,column);
+      @include flex(baseline, center, column);
       box-shadow: $base-shadow;
       background-color: white;
       & .card-new {
         position: absolute;
+        right: 1rem;
+        top: 1rem;
+        background: #99e2d0;
+        padding: 0.5rem 1rem;
+        color: #1b6150;
+        font-weight: 500;
       }
       & .card-img {
         width: 100%;
@@ -116,13 +125,12 @@
           width: 100%;
           height: 100%;
           object-fit: cover;
-
         }
       }
       & .card-desc {
         padding: $base-padding;
-        width: calc(100% - $base-padding*2);
-        @include flex(center,space-between,row)
+        width: calc(100% - $base-padding * 2);
+        @include flex(center, space-between, row);
       }
     }
   }

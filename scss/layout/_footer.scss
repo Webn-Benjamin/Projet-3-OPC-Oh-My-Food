@@ -1,0 +1,33 @@
+@use "../abstracts/" as *;
+footer {
+  background: #353535;
+  & .footer-container {
+    padding: $base-padding;
+    max-width: 1440px;
+    margin: auto;
+    @include flex(unset, center, column);
+    & h3 {
+      margin: 0;
+      margin-bottom: 1rem;
+      color: white;
+      font-family: "Shrikhand", cursive;
+      font-weight: 400;
+    }
+    & a {
+      text-decoration: none;
+      gap: 1rem;
+      color: white;
+      line-height: 1.6rem;
+      &:hover {
+        text-decoration: underline;
+      }
+      & i {
+        text-decoration: none;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+  & .footer-restaurants {
+    padding: 1.4rem;
+  }
+}

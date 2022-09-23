@@ -13,3 +13,19 @@ $base-font: "Roboto", sans-serif;
 $base-padding: 1rem;
 // Margin
 $bottom-margin: 2rem;
+
+// Responsive
+$breakpoints: (
+  "small": (
+    min-width: 768px,
+  ),
+  "medium": (
+    min-width: 992px,
+  ),
+    "large": (
+    min-width: 1200px,
+  ),
+  "x-large": (
+    min-width: 1440px,
+  ),
+);

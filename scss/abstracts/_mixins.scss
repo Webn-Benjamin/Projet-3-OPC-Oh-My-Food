@@ -1,3 +1,4 @@
+@use "./variables" as *;
 // Flex
 @mixin flex($position, $justify, $direction) {
   display: flex;
@@ -5,8 +6,13 @@
   justify-content: $justify;
   flex-direction: $direction;
 }
-
-// Button 
+// Overflow
+@mixin overflow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+// Button
 @mixin buttongradient {
   border: 0;
   padding: 1.2rem;
@@ -30,6 +36,29 @@
     text-decoration: none;
     color: white;
     font-weight: 400;
-}
+  }
 }
 
+// Responsive
+/// Responsive breakpoint manager
+/// @access public
+/// @param {String} $breakpoint - Breakpoint
+/// @requires $breakpoints
+@mixin respond-to($breakpoint) {
+  $raw-query: map-get($breakpoints, $breakpoint);
+
+  @if $raw-query {
+    $query: if(
+      type-of($raw-query) == "string",
+      unquote($raw-query),
+      inspect($raw-query)
+    );
+
+    @media #{$query} {
+      @content;
+    }
+  } @else {
+    @error 'No value found for `#{$breakpoint}`. '
+         + 'Please make sure it is defined in `$breakpoints` map.';
+  }
+}
