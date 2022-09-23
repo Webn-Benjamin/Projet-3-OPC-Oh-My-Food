@@ -1,0 +1,39 @@
+@use "../abstracts" as *;
+
+@include respond-to("medium") {
+  .fonctionnement ol {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    & li {
+      width: calc(100% - 3rem);
+    }
+  }
+  .restaurants .restaurants-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@include respond-to("large") {
+  .container-menu .menu {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+@include respond-to("x-large") {
+  .fonctionnement {
+    max-width: 1440px;
+    margin: auto;
+  }
+  .restaurants h2,
+  .restaurants-container {
+    max-width: 1440px;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  .container-menu {
+    max-width: 1440px;
+    margin: auto;
+    margin-top: -4rem;
+  }
+}

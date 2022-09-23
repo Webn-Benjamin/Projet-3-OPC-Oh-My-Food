@@ -1,21 +1,22 @@
-.footer {
+@use "../abstracts/" as *;
+footer {
   background: #353535;
-  padding: 1rem;
-  &-container {
-    max-width: 1330px;
+  & .footer-container {
+    padding: $base-padding;
+    max-width: 1440px;
     margin: auto;
-    display: flex;
-    flex-direction: column;
+    @include flex(unset, center, column);
     & h3 {
       margin: 0;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
       color: white;
       font-family: "Shrikhand", cursive;
       font-weight: 400;
     }
     & a {
-      color: white;
       text-decoration: none;
+      gap: 1rem;
+      color: white;
       line-height: 1.6rem;
       &:hover {
         text-decoration: underline;
@@ -25,5 +26,8 @@
         margin-right: 0.5rem;
       }
     }
+  }
+  & .footer-restaurants {
+    padding: 1.4rem;
   }
 }
