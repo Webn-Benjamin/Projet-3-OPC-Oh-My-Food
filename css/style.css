@@ -1,4 +1,56 @@
 @charset "UTF-8";
+@keyframes ItemsAppear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.delay-0 {
+  animation-delay: 0s !important;
+}
+
+.delay-1 {
+  animation-delay: 0.15s !important;
+}
+
+.delay-2 {
+  animation-delay: 0.3s !important;
+}
+
+.delay-3 {
+  animation-delay: 0.45s !important;
+}
+
+.delay-4 {
+  animation-delay: 0.6s !important;
+}
+
+.delay-5 {
+  animation-delay: 0.75s !important;
+}
+
+.delay-6 {
+  animation-delay: 0.9s !important;
+}
+
+.delay-7 {
+  animation-delay: 1.05s !important;
+}
+
+.delay-8 {
+  animation-delay: 1.2s !important;
+}
+
+.delay-9 {
+  animation-delay: 1.35s !important;
+}
+
+.delay-10 {
+  animation-delay: 1.5s !important;
+}
+
 article,
 aside,
 details,
@@ -244,58 +296,6 @@ header {
   font-family: "Shrikhand", cursive;
 }
 
-@keyframes ItemsAppear {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-.delay-0 {
-  animation-delay: 0s !important;
-}
-
-.delay-1 {
-  animation-delay: 0.15s !important;
-}
-
-.delay-2 {
-  animation-delay: 0.3s !important;
-}
-
-.delay-3 {
-  animation-delay: 0.45s !important;
-}
-
-.delay-4 {
-  animation-delay: 0.6s !important;
-}
-
-.delay-5 {
-  animation-delay: 0.75s !important;
-}
-
-.delay-6 {
-  animation-delay: 0.9s !important;
-}
-
-.delay-7 {
-  animation-delay: 1.05s !important;
-}
-
-.delay-8 {
-  animation-delay: 1.2s !important;
-}
-
-.delay-9 {
-  animation-delay: 1.35s !important;
-}
-
-.delay-10 {
-  animation-delay: 1.5s !important;
-}
-
 .main {
   margin: auto;
 }
@@ -307,69 +307,6 @@ h3 {
 
 p {
   margin: 0;
-}
-
-header {
-  text-align: center;
-  height: 3.5rem;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
-  z-index: 1;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-}
-header a {
-  position: absolute;
-  left: 5rem;
-  transform: translateY(-50%);
-  top: 50%;
-  color: inherit;
-}
-header a i {
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  font-size: 1.4rem;
-}
-header h1 {
-  margin: 0;
-  font-weight: 100;
-}
-
-footer {
-  background: #353535;
-}
-footer .footer-container {
-  padding: 1rem;
-  max-width: 1440px;
-  margin: auto;
-  display: flex;
-  align-items: unset;
-  justify-content: center;
-  flex-direction: column;
-}
-footer .footer-container h3 {
-  margin: 0;
-  margin-bottom: 1rem;
-  color: white;
-  font-family: "Shrikhand", cursive;
-  font-weight: 400;
-}
-footer .footer-container a {
-  text-decoration: none;
-  gap: 1rem;
-  color: white;
-  line-height: 1.6rem;
-}
-footer .footer-container a:hover {
-  text-decoration: underline;
-}
-footer .footer-container a i {
-  text-decoration: none;
-  margin-right: 0.5rem;
-}
-footer .footer-restaurants {
-  padding: 1.4rem;
 }
 
 .card-heart {
@@ -495,6 +432,69 @@ footer .footer-restaurants {
 .loader .spinner div.bar12 {
   transform: rotate(330deg) translate(0, -130%);
   animation-delay: -0.0833s;
+}
+
+header {
+  text-align: center;
+  height: 3.5rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+header a {
+  position: absolute;
+  left: 5rem;
+  transform: translateY(-50%);
+  top: 50%;
+  color: inherit;
+}
+header a i {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 1.4rem;
+}
+header h1 {
+  margin: 0;
+  font-weight: 100;
+}
+
+footer {
+  background: #353535;
+}
+footer .footer-container {
+  padding: 1rem;
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  align-items: unset;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .footer-container h3 {
+  margin: 0;
+  margin-bottom: 1rem;
+  color: white;
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+}
+footer .footer-container a {
+  text-decoration: none;
+  gap: 1rem;
+  color: white;
+  line-height: 1.6rem;
+}
+footer .footer-container a:hover {
+  text-decoration: underline;
+}
+footer .footer-container a i {
+  text-decoration: none;
+  margin-right: 0.5rem;
+}
+footer .footer-restaurants {
+  padding: 1.4rem;
 }
 
 .localisation {
