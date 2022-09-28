@@ -106,7 +106,8 @@ a {
 a:focus {
   outline: thin dotted;
 }
-a:hover, a:active {
+a:hover,
+a:active {
   outline: 0;
 }
 
@@ -176,7 +177,8 @@ q {
   quotes: "“" "”" "‘" "’";
 }
 
-q:before, q:after {
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -246,9 +248,9 @@ select {
 }
 
 button,
-html input[type=button],
-input[type=reset],
-input[type=submit] {
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
 }
@@ -274,16 +276,18 @@ table {
   border-spacing: 0;
 }
 
-input[type=search] {
+input[type="search"] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
-input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
-input[type=checkbox], input[type=radio] {
+input[type="checkbox"],
+input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
@@ -329,7 +333,11 @@ p {
 .card-heart .hover {
   opacity: 0;
   transition-duration: 1s;
-  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  background-image: linear-gradient(
+    to top,
+    rgba(147, 86, 220, 0.9),
+    rgba(255, 121, 218, 0.9)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -376,7 +384,11 @@ p {
 .loader .spinner div {
   width: 6%;
   height: 16%;
-  background: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  background: linear-gradient(
+    0deg,
+    rgba(147, 86, 220, 0.9),
+    rgba(255, 121, 218, 0.9)
+  );
   position: absolute;
   left: 49%;
   top: 43%;
@@ -540,7 +552,11 @@ footer .footer-restaurants {
   font-size: 1.1rem;
   border-radius: 2rem;
   color: #fff;
-  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  background-image: linear-gradient(
+    0deg,
+    rgba(147, 86, 220, 0.9),
+    rgba(255, 121, 218, 0.9)
+  );
   cursor: pointer;
   transition-duration: 0.25s;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
@@ -552,7 +568,7 @@ footer .footer-restaurants {
 
 .fonctionnement {
   display: flex;
-  align-items: none;
+  align-items: unset;
   justify-content: center;
   flex-direction: column;
   padding: 0 1rem;
@@ -575,14 +591,15 @@ footer .footer-restaurants {
 .fonctionnement ol li {
   display: flex;
   align-items: center;
-  justify-content: none;
+  justify-content: unset;
   flex-direction: row;
   gap: 1rem;
   list-style-type: none;
   width: calc(100% - 4rem);
   background-color: #f6f6f6;
   padding: 1.5rem;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -2px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -2px 0px inset;
   border-radius: 1rem;
   position: relative;
   transition: 0.2s;
@@ -635,7 +652,8 @@ footer .footer-restaurants {
   align-items: baseline;
   justify-content: center;
   flex-direction: column;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -2px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -2px 0px inset;
   background-color: white;
 }
 .restaurants .restaurants-container .card .card-new {
@@ -721,7 +739,8 @@ footer .footer-restaurants {
 }
 .container-menu .menu-items {
   background: white;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -2px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -2px 0px inset;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -809,7 +828,11 @@ footer .footer-restaurants {
   font-size: 1.1rem;
   border-radius: 2rem;
   color: #fff;
-  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  background-image: linear-gradient(
+    0deg,
+    rgba(147, 86, 220, 0.9),
+    rgba(255, 121, 218, 0.9)
+  );
   cursor: pointer;
   transition-duration: 0.25s;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
@@ -848,7 +871,7 @@ footer .footer-restaurants {
     margin: auto;
   }
   .restaurants h2,
-.restaurants-container {
+  .restaurants-container {
     max-width: 1440px;
     margin: auto;
     margin-bottom: 2rem;
