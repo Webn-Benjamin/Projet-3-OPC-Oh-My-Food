@@ -66,6 +66,9 @@
       &:hover {
         background: #f5edff;
       }
+      &:hover i {
+        color: $purple;
+      }
       & i {
         color: gray;
       }
