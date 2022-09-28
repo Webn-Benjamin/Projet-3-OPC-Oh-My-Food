@@ -539,7 +539,7 @@ footer .footer-restaurants {
   font-weight: 500;
   font-size: 1.1rem;
   border-radius: 2rem;
-  background-color: #686868;
+  color: #fff;
   background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   cursor: pointer;
   transition-duration: 0.25s;
@@ -548,11 +548,6 @@ footer .footer-restaurants {
 .nos-restaurants .btn:hover {
   background-color: #fff;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
-}
-.nos-restaurants .btn a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 400;
 }
 
 .fonctionnement {
@@ -802,6 +797,10 @@ footer .footer-restaurants {
 .container-menu .command {
   padding: 1rem 0 1rem;
   margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 .container-menu .command .btn {
   border: 0;
@@ -809,7 +808,7 @@ footer .footer-restaurants {
   font-weight: 500;
   font-size: 1.1rem;
   border-radius: 2rem;
-  background-color: #686868;
+  color: #fff;
   background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   cursor: pointer;
   transition-duration: 0.25s;
@@ -818,11 +817,6 @@ footer .footer-restaurants {
 .container-menu .command .btn:hover {
   background-color: #fff;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
-}
-.container-menu .command .btn a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 400;
 }
 .container-menu .command .btn-command {
   display: block;
